@@ -1,0 +1,18 @@
+/* Small */
+@media (min-width: 0px) {
+    .ft-card:nth-child(even){
+        transform: translateY(0);
+    }
+  }
+  /* Medium */
+  @media (min-width: 750px) {
+    .ft-card:nth-child(even){
+        transform: translateY(50px);
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .ft-card:nth-child(even){
+        transform: translateY(50px);
+    }
+  }

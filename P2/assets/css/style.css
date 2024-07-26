@@ -27,7 +27,7 @@ body {
     font-size: 1em;
     text-transform: uppercase;
     /* color: #ff6a00; */
-    background: linear-gradient(to right, rgba(249,198,124,1) 10%, rgba(243,117,89,1) , rgb(238, 52, 142), rgb(82, 23, 201)50% );
+    background: linear-gradient(to right, rgba(249, 198, 124, 1) 10%, rgba(243, 117, 89, 1), rgb(238, 52, 142), rgb(82, 23, 201)50%);
     background-size:15%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
