@@ -1,0 +1,100 @@
+:root{
+    --main-color:rgb(255,188,19);
+    --sec-color:rgb(255,211,102);
+    --dark-color:rgb(84,84,84);
+    --gray:rgb(167,165,167);
+    --fonts: 'Nunito Sans', arial, sans-serif;
+    --margin:20px;
+    --padding: 20px;
+    --big-size:25px;
+}
+
+body{
+    font-family: var(--fonts);
+    margin: 0;
+    padding: 0;
+    /* background-color: #f9f9f9; */
+}
+::selection{
+    background-color: var(--sec-color);
+    color: white;
+}
+.main-services{
+    margin: var(--margin) auto;
+    padding: var(--padding);
+    text-align: center;
+}
+.main-services #main-title{
+    text-transform: uppercase;
+    font-size: var(--big-size);
+    
+}
+.main-services #main-title{
+    position: relative;
+    color: var(--dark-color);
+}
+.main-services #main-title::after{
+    content: '';
+    display: block;
+    width: 4vw;
+    height: 4px;
+    margin: 10px auto;
+    background-color: var(--sec-color);
+    border-radius: 1px;
+    transition: 0.4s;
+
+}
+.main-services #main-title:hover::after{
+    width:6vw;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);  
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+.service{
+    display: grid;
+    gap: 10px;
+    padding: var(--padding);
+    text-align: left;
+    grid-template-columns: repeat(2,auto);
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* align-items: center; */
+    align-self: center;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.service i{
+    margin-bottom: 15px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    transform: translateY(25px);
+    
+}
+.service h3 {
+    /* font-size: 1em; */
+    /* margin-bottom: 10px; */
+    color: var(--dark-color);
+}
+.service p {
+    /* font-size: 1em; */
+    color: var(--gray);
+}
+.service .service-content{
+    padding-left: 10px;
+
+}
+.service:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
