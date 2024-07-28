@@ -96,7 +96,6 @@ body {
 
 .ft-card:nth-child(even){
     transform: translateY(50px);
-    
 }
 
 .ft-card:hover i{

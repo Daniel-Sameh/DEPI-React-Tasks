@@ -19,21 +19,21 @@ body{
     background-color: var(--sec-color);
     color: white;
 }
-.main-services{
+#main-services{
     margin: var(--margin) auto;
     padding: var(--padding);
     text-align: center;
 }
-.main-services #main-title{
+#main-services .main-title{
     text-transform: uppercase;
     font-size: var(--big-size);
     
 }
-.main-services #main-title{
+#main-services .main-title{
     position: relative;
     color: var(--dark-color);
 }
-.main-services #main-title::after{
+#main-services .main-title::after{
     content: '';
     display: block;
     width: 4vw;
@@ -44,7 +44,7 @@ body{
     transition: 0.4s;
 
 }
-.main-services #main-title:hover::after{
+#main-services .main-title:hover::after{
     width:6vw;
 }
 .grid-container{
