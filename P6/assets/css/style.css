@@ -1,55 +1,170 @@
-:root{
-    --main-color: #d53a59;
-    --gray:#dfdfdfcb;
-}
-body{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    font-family: arial,Tahoma, Geneva, Verdana, sans-serif;
 }
-.grid-stat{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-    margin: 10px;
-    border: 1px solid var(--gray);
-    /* padding: 30px; */
-    position: relative;
+#classes-section{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/happy-children-md.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-height: 50em;
+    margin: 50px 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* background-image: url("../images/happy-children-md.jpg"); */
+    /* width: 100%;
+    height: 100%;
+    background-size: contain; */
+
+}
+.container h1::after{
+    content: '';
+    display: block;
+    width: 1.5em;
+    height: 2px;
+    transform: translateY(10px);
+    background-color: rgb(255, 195, 83);
+    margin: 0 auto;
+}
+.class-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.stat-card{
-    border-right: 1px solid var(--gray);
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.class {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px,1fr));
+    gap: 20px; */
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    /* text-align: center; */
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.class-card {
+    min-width: 150px;
+    max-width: 300px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+    flex-shrink: 0;
+    /* position: relative; */
+}
+
+.class-card img {
+    width: 100%;
+    height: auto;
+}
+/* .class-card img::after{
+    content: 'kmlmkmlkm';
+    display: block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px;
+    min-height: 30px;
+    min-width: 100px;
+    border-radius: 6px 6px 0 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+    /* transform: translateY(-64px) translateX(90px); */
+    /* max-width: 150px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;*/
+    /*z-index: 1000; 
+}   */
+
+.class-info {
     padding: 20px;
 }
-.grid-stat:last-child{
-    border-right: 0px;
+
+.time {
+    display: block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px 6px 0 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transform: translateY(-64px) translateX(90px);
+    max-width: 150px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.stat-card i {
-    font-size: 2em;
-    color: var(--main-color); /* Match the color of the icons in the image */
-    /* margin-bottom: 10px; */
+h2 {
+    font-size: 22px;
+    margin: 0 0 10px;
+    color: #333;
+    transform: translateY(-50px);
 }
-.stat-card p{
-    text-transform: uppercase;
-    color: #a2a2a2;
-    font-size: small;
-    font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 10px 0;
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 10px;
+    transform: translateY(-50px);
 }
-.stat-card h2{
-    font-size: 2em;
-    margin: 0;
-}
-.stat-card .stat-content{
+
+.details {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 20px;
-    justify-content: flex-start;
-    /* padding: 10px; */
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #333;
+}
+.details::before{
+    display: flex;
+    content: '';
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    height:0.07px;
+    margin: 0 auto;
+    opacity: 0.2;
+    background-color: #000000;
+    transform: translateY(-10px);
+}
+
+/* .details span {
+    display: block;
+} */
+
+.class-card:last-child {
+    margin-right: 0;
+}
+.class-button{
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    background: none;
+    color: white;
+    opacity: 0.5;
+    border: 3px solid white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    transition: 0.3s;
+}
+.class-button:hover{
+    background-color: #000000b3;
 }
