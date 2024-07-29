@@ -1,0 +1,134 @@
+:root{
+    --main-clr: #e6e6e6;
+    --star-clr: #ffa121;
+    --red-clr: #e20c0c;
+    --dark-gray-clr: #b6babc;
+    --gray-clr:#f1f1f1;
+    --black-clr: #141414;
+    --margin: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+#courses{
+    background-color: var(--main-clr);
+}
+.courses-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,400px));
+    gap: 20px;
+    justify-content: center;
+
+}
+.crs-card{
+    /* position: relative; */
+    border-radius: 8px;
+    background-color: white;
+    margin: 10px;
+}
+.crs-card .img img{
+    height: 12rem;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 8px 8px 0 0;
+}
+.by img{
+    height: 3rem;
+    width: 3rem;
+    border: 3px double var(--gray-clr);
+    border-radius: 100%;
+}
+.review{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.review .rating{
+    color: var(--star-clr);
+}
+.review .rating span{
+    color: var(--black-clr);
+    opacity: 0.6;
+}
+.review .bookmark{
+    border-radius: 100%;
+    border: 2px solid rgb(180, 180, 180);
+    /* width: 2rem;
+    height: 2rem; */
+    /* font-size: 1.5rem; */
+    padding: 10px;
+    background-color: rgb(237, 237, 237);
+    color: gray;
+    transform: translateY(-10px);
+}
+.crs-cont{
+    padding: 20px;
+
+}
+.crs-cont .header{
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 10px;
+}
+.crs-cont .content{
+    background-color: var(--main-clr);
+    padding: 5px 5px;
+    /* margin: 0; */
+    display: inline-block;
+    margin-bottom: 10px;
+    
+}
+.crs-cont .content span{
+    padding: 5px 5px;
+    color: #b0b0b0;
+    font-size: 14px;
+    /* display: flex; */
+    justify-content: space-between;
+   
+}
+.crs-cont .content span:last-child{
+    border-left: 1px solid #abacac;
+}
+.crs-cont .desc{
+    font-size: 14px;
+    color: gray;
+    margin: 10px auto;
+}
+.crs-cont .by{
+    display: flex;
+    align-items: center;
+}
+.crs-cont .by .user{
+    margin-left: 10px;
+    color: gray;
+}
+.crs-cont .by .user span{
+    font-weight: 500;
+    color: black;
+}
+.crs-cont .crs-end{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto auto;
+}
+/* .crs-cont .crs-end::before{
+    content: '';
+    display: block;
+    width: 100%;
+    color: var(--dark-gray-clr);
+    height: 1px;
+
+} */
+.crs-end .pricing{
+    color: var(--red-clr);
+    font-weight: 500;
+}
+.crs-cont .pricing del{
+    color: gray;
+}
+.crs-end .crs-details a{
+    text-decoration: none;
+    color: gray;
+}
