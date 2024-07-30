@@ -1,0 +1,63 @@
+:root{
+    --main-clr:  rgb(39,13,201);
+    --star-clr: #ffa121;
+    --red-clr: #e20c0c;
+    --dark-gray-clr: #b6babc;
+    --gray-clr:#f1f1f1;
+    --black-clr: #141414;
+    --margin: 20px;
+    --main-gradient:linear-gradient(90deg, rgba(39,13,201,0.7) 3%, rgba(61,32,214,0.9) 30%, rgba(129,50,219,0.9) 47%, rgba(164,67,222,0.9) 74%, rgba(161,47,198,0.9) 100%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+#sapp{
+    background: var(--main-clr);
+    background-image: var(--main-gradient),url('../images/pexels-wildlittlethingsphoto-708392.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,450px));
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px auto;
+}
+.app-img img{
+    width: 30em;
+    height: 30em;
+}
+.app-cont .stores{
+    display: flex;
+    /* justify-content: center; */
+}
+.app-cont .stores .store{
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 2px 15px 5px ;
+    display: flex;
+    align-items: start;
+
+}
+
+.app-cont .stores .store .download{
+    font-size: 20px;
+}
+.app-cont .stores .store i{
+    font-size: 1.5em;
+    margin-right: 10px;
+    transform: translateY(10px);
+}
+.app-cont .stores .store span{
+    font-size: smaller;
+}
+.app-cont .stores .store span.app-av{
+    font-size: 10px;
+}
+.app-cont .stores .store span#mac{
+    font-size: 14px;
+}
