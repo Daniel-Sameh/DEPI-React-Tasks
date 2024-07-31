@@ -3,65 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
+    <title>Latest Blogs</title>
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Bebas+Neue&family=Caveat:wght@400..700&family=Chivo:ital,wght@0,100..900;1,100..900&family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Bebas+Neue&family=Caveat:wght@400..700&family=Chivo:ital,wght@0,100..900;1,100..900&family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Doodle+Shadow&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <section id="testm">
-        <div class="head">
-            <span>Testimonials</span>
-            <h2>what parents say</h2>
-        </div>
-        <div class="test-grid">
-            <div class="test-card">
-                <div class="test-img">
-                    <img src="./assets/images/pexels-jordan-bergendahl-2628960-10402659.jpg" alt="">
-                </div>
-                <div class="test-cont">
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+    <!-- Start of Blogs Section -->
+    <section id="blogs">
+        <div class="container">
+            <!-- Blogs Header -->
+            <div class="row justify-content-center align-content-center text-center">
+                <div class="header col">
+                    <div class="blog-head">
+                        <span id="back">our blog</span>
+                        <span id="front">our blog</span>
                     </div>
-                    <p class="rate-desc"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis, iusto temporibus magni mollitia quod perspiciatis officia animi architecto illo perferendis natus quas sit quam quisquam sapiente placeat nulla dolores.</em></p>
-                    <h4>David Malan</h4>
-                    <h5>Aliquam sodales</h5>
+                    <p class="h1">Latest from the blog</p>
                 </div>
-                <i class="fas fa-quote-left quote"></i>
             </div>
-            <div class="test-card">
-                <div class="test-img">
-                    <img src="./assets/images/pexels-linkedin-2182970.jpg" alt="">
-                </div>
-                <div class="test-cont">
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <!-- Blogs Start -->
+            <div class="row justify-content-center align-content-center">
+                <!-- Blog 1 Start -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="header ">
+                        <div class="img"><img class="card-img-top" src="./assets/images/pexels-divinetechygirl-1181396.jpg" alt="" ></div>
+                        <div class="label">Marketing</div>
                     </div>
-                    <p class="rate-desc"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis, iusto temporibus magni mollitia quod perspiciatis officia animi architecto illo perferendis natus quas sit quam quisquam sapiente placeat nulla dolores.</em></p>
-                    <h4>David Malan</h4>
-                    <h5>Aliquam sodales</h5>
+                    <div class="content">
+                        <div class="info">
+                            <div class="by"><i class="far fa-user-circle"></i> By Robert</div>
+                            <div class="time"><i class="far fa-calendar-alt"></i> 22 June 2023</div>
+                        </div>
+                        <div class="desc">
+                            <h5 class="card-title">How to Create Modern Web Site For Your Business</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus omnis debitis commodi praesentium sit possimus sapiente blanditiis consequatur quo. Veniam.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+                    </div>
                 </div>
-                <i class="fas fa-quote-left quote"></i>
+                <!-- Blog 2 Start -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="header ">
+                        <div class="img"><img class="card-img-top" src="./assets/images/pexels-fauxels-3184292.jpg" alt="" ></div>
+                        <div class="label">UI/UX Design</div>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <div class="by"><i class="far fa-user-circle"></i> By Robert</div>
+                            <div class="time"><i class="far fa-calendar-alt"></i> 22 June 2023</div>
+                        </div>
+                        <div class="desc">
+                            <h5 class="card-title">How to Create Modern Web Site For Your Business</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus omnis debitis commodi praesentium sit possimus.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 3 Start -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="header ">
+                        <div class="img"><img class="card-img-top" src="./assets/images/pexels-fauxels-3184291.jpg" alt=""></div>
+                        <div class="label">Business</div>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <div class="by"><i class="far fa-user-circle"></i> By Robert</div>
+                            <div class="time"><i class="far fa-calendar-alt"></i> 22 June 2023</div>
+                        </div>
+                        <div class="desc">
+                            <h5 class="card-title">How to Create Modern Web Site For Your Business</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus omnis debitis commodi praesentium sit possimus sapiente blanditiis consequatur quo. Veniam quod ipsum molestiae corporis, minima odit dicta laboriosam aspernatur?</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <!-- End of Blogs Cards -->
             </div>
-
+            <!-- End of Blogs -->
         </div>
     </section>
+    <!-- End of Blogs Section -->
+
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 </html>

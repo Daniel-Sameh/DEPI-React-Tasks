@@ -1,83 +1,138 @@
 :root{
     --main-clr: #424761;
     --star-clr: #fbeb00;
-    --red-clr: #e20c0c;
-    --gray-clr: #adacac;
+    --red-clr: #ff3838;
+    --dark-gray-clr: #777780;
+    --gray-clr: #8b8c97;
     --black-clr: #141414;
     --margin: 20px;
 }
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
-    margin: 0;
-    padding: 0;
     font-family: "Roboto", sans-serif;
 }
-#testm{
+.header .blog-head{
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    height: 4em;
+    margin: 20px auto 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.header .blog-head #back{
+    font-size: 4em;
+    opacity: 0.4;
+    color: transparent;      /* Make the font color transparent */
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);  /* Outline thickness and color */
+    text-stroke: 1px rgba(0, 0, 0, 0.5);  /* Support for non-WebKit browsers (if supported) */
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -20%);
+    white-space: nowrap;
+    
+
+}
+.header .blog-head #front{
+    position: relative;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin:var(--margin);
-}
-#testm img{
-    height: 4.5em;
-    width: 4.5em;
-    border-radius: 100%;
-    border: 1px solid black;
-    transform: translateY(40px);
-    margin: 0 auto;
-}
-.test-grid{
-    display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); */
-    grid-template-columns: repeat(2,minmax(250px, 32em));
-    gap: var(--margin);
-    margin: 0 auto;
-
-}
-.head span{
-    text-transform: uppercase;
-    color: var(--gray-clr);
-    font-size: 1em;
-    font-weight: 300;
-    margin: 0px;
-
-}
-.head h2{
-    margin: 0;
-    text-transform: capitalize;
-    font-size: 2.5em;
-    color: var(--black-clr);
-}
-.test-cont{
-    background-color: var(--main-clr);
-    color: white;
-    padding: var(--margin);
-    padding-top: 50px;
-}
-.test-cont h4{
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-.test-cont h5{
-    opacity: 0.7;
-    margin-top: 0;
-    /* margin: 0 auto; */
-}
-.rating{
-    color: var(--star-clr);
-}
-.rate-desc{
-    opacity: 0.7;
-    font-size: 1em;
-}
-
-.test-card .quote{
+    justify-content: center;
+    font-size: 1rem;
+    /* width: 100%; */
+    font-weight: 400;
     color: var(--red-clr);
-    background-color: white;
-    border: 1px solid var(--gray-clr);
-    border-radius: 100%;
-    box-shadow: 0px 0px 1px 0px var(--gray-clr);
-    padding: 12px;
-    font-size: 1.5em;
-    transform: translate(100px,-30px);
+}
+.header .blog-head #front::after,
+.header .blog-head #front::before{
+    content: '';
+    display: block;
+    width: 1em;
+    height: 1px;
+    background-color: var(--red-clr);
+    margin: 0 5px;
+}
+.header .h1{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.card{
+    margin: 5px;
+    padding: 0;
+    /* width: 20rem; */
+    border-radius: 15px;
+}
+.card .header .img img{
+    width: 100%;
+    height: 18rem;
+    border-radius: 15px 15px 0 0;
+}
+.card .header{
+    position: relative;
+}
+.card .header .label{
+    position: absolute;
+    transform: translate(2rem, -16rem);
+    color: whitesmoke;
+    background-color: var(--red-clr);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    /* width: 0;
+    height: 0; */
+    /* opacity: 0; */
+    transition: 0.3s;
+}
+/* .card:hover .header .label{
+    opacity: 1;
+    width: auto;
+    height: auto;
+} */
+.card .content{
+    padding: 20px;
+}
+.card .content .info{
+    display: flex;
+    justify-content: flex-start;
+}
+.card .content .info{
+    color: var(--dark-gray-clr);
+    opacity: 0.8;
+}
+.card .content .info i{
+    color: var(--red-clr);
+}
+.card .content .info .by{
+    margin: 0 20px 10px 0;
+}
+.card .content .desc{
+    margin-bottom: 0;
+}
+.card .footer{
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+.card .footer a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+    font-weight: 500; 
+}
+.card .footer a i{
+    transition: 0.3s;
+}
+.card .footer a:hover i{
+    transform: translateX(5px);
+}
+.card .card-text{
+    color: var(--dark-gray-clr);
 }
