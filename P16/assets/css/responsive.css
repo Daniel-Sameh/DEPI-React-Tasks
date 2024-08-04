@@ -1,0 +1,33 @@
+/* Small */
+@media (min-width: 0px) {
+  .test-grid{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); */
+    grid-template-columns: repeat(1,minmax(250px, 32em));
+    gap: var(--margin);
+    margin: 0 auto;
+
+}
+  }
+  /* Medium */
+  @media (min-width: 750px) {
+    .test-grid{
+      display: grid;
+      /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); */
+      grid-template-columns: repeat(2,minmax(250px, 32em));
+      gap: var(--margin);
+      margin: 0 auto;
+  
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .test-grid{
+      display: grid;
+      /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); */
+      grid-template-columns: repeat(2,minmax(250px, 32em));
+      gap: var(--margin);
+      margin: 0 auto;
+  
+    }
+  }
