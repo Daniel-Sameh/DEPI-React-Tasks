@@ -1,0 +1,75 @@
+:root{
+    --main-clr: #3e66f3;
+    --secondary-clr: #eff1f9;
+    --back-clr: #f5f5f5;
+    --third-clr:#fb6285;
+    --light-blue: #5d83a9;
+    --dark-color: #151515;
+    --star-clr: #fbeb00;
+    --red-clr: #ff3838;
+    --dark-gray-clr: #777780;
+    --gray-clr: #8d8b8b;
+    --black-clr: #141414;
+    --margin: 20px;
+    --blue :#63a3f9;
+    --light-orange: #faac81;
+    --light-green :#87f3c5;
+    --dark-blue :#4d5d73;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: var(--main-clr);
+    color: white;
+}
+body{
+    background-color: white;
+    font-family: "Rubik", sans-serif;
+}
+#app-options {
+    margin: 20px;
+}
+#app-options .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#app-options img{
+    max-width: 20em;
+    max-height: 27em;
+}
+#app-options .content{
+    display: flex;
+    flex-direction: column;
+}
+#app-options .content .info{
+    display: flex;
+
+}
+#app-options .content .info i{
+    color: #f66646;
+    font-size: 2.5em;
+    margin-right: 10px;
+    
+}
+.blue{
+    color: var(--blue) !important; 
+}
+.orange{
+    color: var(--light-orange) !important;
+}
+.green{
+    color: var(--light-green) !important;
+}
+.dark-blue{
+    color: var(--dark-blue) !important;
+}
+#app-options .content .info p.h3{
+    font-weight: 500;
+}
+#app-options .content .info p:last-child{
+    color: var(--dark-gray-clr);
+}
