@@ -43,29 +43,38 @@ body{
     border-radius: 15px;
     /* border: 2px solid rgba(0, 0, 0, 0.434); */
     background-color: white;
+    box-sizing: border-box;
+    padding: 0;
 }
 #properties .p-card .image{
     position: relative;
-    margin: 10px;
+    /* margin: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
 }
 #properties .p-card .image img{
     /* height: 17em; */
-    max-height: 16rem;
-    max-width: 30rem;
+    /* max-height: 16rem; */
+    /* max-width: 30rem; */
     border-radius: 10px;
-    /* width: 26em; */
+    
+    width: 100%;
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block;
 }
 #properties .p-card .image .label{
     position: absolute;
     border-radius: 25px;
     padding: 2px var(--margin);
-    transform: translate(-8.4em,-7.4em);
+    transform: translate(-8.4em,-7.0em);
     font-size: 0.9em;
+    /* z-index: 100; */
 }
 #properties .p-card .image .offer{
     background-color: whitesmoke;
